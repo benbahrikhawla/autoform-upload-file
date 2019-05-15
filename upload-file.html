@@ -1,0 +1,42 @@
+<template name="afUploadFile">
+    <select multiple data-schema-key="{{schemaKey}}" style="visibility: hidden; height: 0px;">
+        {{#each filesId}}
+        
+            <option selected="selected" value="{{this}}">{{this}}</option>
+        {{/each}}
+    </select>
+    <div id="{{id}}" class="fileUpload">
+        <div class="row">
+            <div class="col-sm-12 newFile">
+                <div class="uploadButton addFile">
+                    <i class="fa fa-camera fa-lg" aria-hidden="true"> Add An Image</i>
+                </div>
+            </div>
+        </div>
+            <div class="images-container">
+                {{#each filesLink}}
+                    <div class="image-container picture">
+                        <img id="{{linkId}}" src="#" class="img-fluid rounded" alt="your image" />
+                    </div>
+                {{/each}}
+            </div>
+        {{#with currentUpload}}
+            Uploading <b>{{file.name}}</b>:
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: {{progress.get}}%" aria-valuenow="{{progress.get}}" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        {{/with}}
+        <div class="images-container">
+            {{#each filesId}}
+                <div class="image-container picture">
+                    <div class="controls">
+                        <a href="#" id="deletePicture" class="control-btn remove" data-file="{{this}}">
+                            <i class="fa fa-trash-o"></i>
+                        </a>
+                    </div>
+                    <img src="http://localhost:3000/cdn/storage/Images/{{this}}/original/{{this}}" class="img-fluid rounded"/>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</template>

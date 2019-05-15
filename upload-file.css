@@ -1,0 +1,30 @@
+.deleteIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.picture {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 0px !important;
+}
+.newFile {
+    opacity: 0.6;
+    border-style: dashed;
+    border: 1px #7867A7 solid;
+    color: #7867A7;
+    width: max-width;
+}
+.fileUpload:hover {
+    opacity: 1;
+}
+.addFile {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 70px;
+    text-align: center;
+}
+
