@@ -13,9 +13,9 @@
                 </div>
             </div>
         </div>
-            <div class="images-container">
+            <div class="images-container d-flex justify-content-center">
                 {{#each filesLink}}
-                    <div class="image-container picture">
+                    <div class="image-container col-md-3 col-sm-12 picture">
                         <img id="{{linkId}}" src="#" class="img-fluid rounded" alt="your image" />
                     </div>
                 {{/each}}
@@ -26,9 +26,9 @@
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: {{progress.get}}%" aria-valuenow="{{progress.get}}" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         {{/with}}
-        <div class="images-container">
+        <div class="images-container d-flex justify-content-center">
             {{#each filesId}}
-                <div class="image-container picture">
+                <div class="image-container col-md-3 col-sm-12 picture">
                     <div class="controls">
                         <a href="#" id="deletePicture" class="control-btn remove" data-file="{{this}}">
                             <i class="fa fa-trash-o"></i>

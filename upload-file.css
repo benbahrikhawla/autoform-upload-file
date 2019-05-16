@@ -5,10 +5,9 @@
     transform: translate(-50%, -50%);
 }
 .picture {
-    width: 200px;
-    height: 200px;
     margin-top: 10px;
     margin-bottom: 0px !important;
+    text-align: center;
 }
 .newFile {
     opacity: 0.6;
@@ -27,4 +26,3 @@
     line-height: 70px;
     text-align: center;
 }
-
