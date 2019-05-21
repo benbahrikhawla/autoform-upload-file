@@ -2,7 +2,7 @@ Package.describe({
   name: 'perfectsofttunisia:autoform-upload-file',
   version: '1.0.0',
   summary: 'Upload Files',
-  git: '',
+  git: 'https://github.com/benbahrikhawla/autoform-upload-file',
   documentation: 'README.md'
 });
 

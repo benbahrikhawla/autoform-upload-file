@@ -68,7 +68,8 @@ Template.afUploadFile.onCreated(function () {
   this.currentUpload = new ReactiveVar(false);
   this.filesId = new ReactiveVar(this.data.value || []);
   this.filesLink = new ReactiveVar([]);
-  this.id = this.data.atts ? (this.data.atts.id || Math.random().toString(36).substring(7)) : Math.random().toString(36).substring(7); 
+  let id = this.data.atts ? (this.data.atts.id || Math.random().toString(36).substring(7)) : Math.random().toString(36).substring(7); 
+  this.id = 'file' + id
   return;
 });
 
